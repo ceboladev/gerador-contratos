@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyContract - MicroSaaS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Easy<span>Contract</span></h1>
+        <p>Gere contratos de freelancer em 1 minuto.</p>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <form id="contractForm">
+                <input type="text" id="freelancerName" placeholder="Seu Nome" required>
+                <input type="text" id="clientName" placeholder="Nome do Cliente" required>
+                <input type="text" id="projectName" placeholder="Nome do Projeto" required>
+                <input type="number" id="price" placeholder="Valor (R$)" required>
+                <button type="submit">Gerar Contrato</button>
+            </form>
+        </section>
+
+        <section id="contractPreview" class="preview-section hidden">
+            <div id="contractContent">
+                <!-- O JS vai preencher aqui -->
+            </div>
+            <button onclick="window.print()" class="btn-print">Imprimir/Salvar PDF</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
